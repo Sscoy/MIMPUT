@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--PLEASE READ!!!
-- NEW! SOON, ACCENTS (tilde, acute, grave...) for French, Portuguese, German, and Cyrilic (Russian) characters WILL be supported!
-- Version 0.2! This work was one of the BIGGEST of the game! You can finally translate it! We surely should be proud of this control! But due to Mario and other fonts, characters like '㡢 ࡧ' are not supported-. 
-- Although too early, it already covers up 99% of the game (more than 5,000 lines!), and ALL creature scenes (well, perhaps some exceptions might appear)! Certain screens, scene names in the gallery are NOT in the XML yet.
-- UTF8 chars NOT supported because fonts used in the game is NOT UTF8, please use LATIN (ASCII) only.
-- You should use a good XML editor. Notepad++ is great because it will be colored differently, easing your work.
-- You DONT need to translate text inside <!-  ->
-- Please BE CAREFUL about not closing tags or other misses. Incomplete or errors in XML will give a'XML load error' message or give unexpected behavior in the game!
-- Its not possible to change some text, like Princess and Creature names (e.g. if you want to call Peach as 'Pêssego' or Goomba as 'Gumpa', you wont be able to do so). This is due to XML and the game limitations. If I figure it out in the future, I can implement it.
-- \\u is UNICODE character. It s NOT working currently, even if it's present. To work in the future. 
-- Please translate observing the placement of \n. Its the line breaker. I use them many times just to adjust (centralize) text better. If you translate a given phrase and you see the text is trespassing the balloon, you can force its break by adding a \n. Dont use <br/>!
-You can live without \n, but certain balloons will be 'very empty' without them, or the first line might trespass it a bit because of the curve of the balloon.
-- I use 'loop="1a", "1b"', etc (that is, variations) to give ALTERNATIVE words according to the logic inside the scene, like if Peach is a nymph or if her...asshole is swollen.
-- There are scenes with same messages. This can occur. You can also make them different, if you want more variety.
-- Please DONT change variables (those inside { } ), or the game will malfunction!
-- If any errors (or something in the game that doesnt have a tag here to be able to translate, or a text that trespasses buttons/boundaries), please contact me on Legend of Krystal site (ivanaedler).
+<!--ПОЖАЛУЙСТА ПРОЧТИТЕ!!!
+- НОВОЕ! СКОРО будут поддерживаться ДИАКТРИКИ (тильда, умлаут, краткая...) для французских, португальских, немецких и кириллических (русских) символов!
+- Версия 0.2! Эта работа была одна из САМЫХ больших в игре! Вы наконец-то можете ее переводить! Мы определенно должны гордиться таким контролем! Но из-за шрифта Mario и некоторых других, символы вроде '㡢 ࡧ' не поддерживаются. 
+- Хотя это только начало, уже охвачено до 99% игры (более 5,000 строк!) и ВСЕ сцены с существами (ну, возможно обнаружатся некоторые исключения)! Некоторые окна, названия сцен в галерее пока еще отсутствуют в XML.
+- [не актуально] UTF8 символы не поддерживаются, поскольку шрифты в игре не в UTF8, пожалуйста, используйте только латиницу (ASCII).
+- Вы должны использовать хороший XML редактор. Notepad++ будет отличным выбором, поскольку он окрашивает код в разные цвета, что облегчает вашу работу.
+- Вам НЕ нужно переводить текст внутри комментариев <!-  ->
+- Пожалуйста, будьте ВНИМАТЕЛЬНЫ, не пропускайте закрывающие теги и не делайте других ошибок. Незавершенный или неправильный XML выдаст сообщение ошибки загрузки 'XML load error' или приведет к неожиданным последствиям в игре!
+- Некоторый текст невозможно изменить, например имя принцессы и названия существ (если вы хотите назвать Peach как 'Персик' или Goomba как 'Грибок', у вас не получится это сделать). Это связано с ограничениями XML и игры. Если мне удастся разобраться с этим в будущем, я постараюсь реализовать данную возможность.
+- \\u означает символ ЮНИКОДА. В настоящее время НЕ работает, даже если присутствует. Это задел на будущее. 
+- Пожалуйста, переводите, обращая внимание на положение \n. Это перенос строки. Я часто его использую для лучшей регулировки (центровки) текста. Если вы перевели фразу и видите, что текст в игре вышел за рамки поля, вы можете вставить свой перенос, добавив \n. Не используйте <br/>!
+Вы можете обойтись без \n, но некоторые текстовые облака покажутся 'слишком пустыми' или первая строка выйдет за рамки из-за изогнутой формы облака.
+- Я использую циклы 'loop="1a", "1b"' и т.д. (то есть варианты) для АЛЬТЕРНАТИВНЫХ (взаимоисключающих) слов в соответствии со смыслом сцены, например, если Peach нимфа или ее... дырка опухла.
+- Есть сцены с одинаковыми сообщениями. Такое встречается. Вы можете сделать их разными, если хотите больше разнообразия.
+- Пожалуйста, НЕ редактируйте переменные (которые внутри { } ), а то игра не будет правильно работать!
+- Если найдете ошибки (или что-нибудь из игры отсутствует здесь для перевода, или текст вышел за границы кнопки/поля), пожалуйста, свяжитесь со мной на сайте Legend of Krystal (ivanaedler).
 -->
 
 		<game>
-			<lang>Pусский</lang> <!--Изменить это на ваше имя языка, в случае, если перевести его. Как будет показано в главном экране-->
+			<lang>Pусский</lang> <!--Замените на название вашего языка при переводе. Это будет отображаться на главном экране-->
 			
 	<!--TOADS-->
 			<scenes scene="toad1"> 
-				<p i="1">Никто не видит\n в этом. Они настолько вкусно...</p>
-				<p i="2">Mwa! Mm! O,\nэто вкус еще лучше!</p>
-				<p i="3">O!! У него есть свои\nего крем все в моих волосах! Но эти шары вкус слишком хорошо...</p>
+				<p i="1">Никто не видит\n. Они такие вкусные, ммм...</p>
+				<p i="2">Мма! Мм! O,\nэтот вкус еще лучше!</p>
+				<p i="3">O нет! Он разлил\nвесь свой крем на мои волосы! Но эти шарики такие приятные на вкус...</p>
 			</scenes>
 			<scenes scene="toad2">
 				<p i="1">He\'s looking\nat me...so tender...</p>
